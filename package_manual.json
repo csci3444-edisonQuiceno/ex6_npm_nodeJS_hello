@@ -1,0 +1,14 @@
+{
+    "name": "ex6_npm_nodejs_hello",
+    "version": "1.0.0",
+    "description": "example project to say hello to npm and node",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "ilker"
+    ],
+    "author": "ilker kiris",
+    "license": "ISC"
+}
