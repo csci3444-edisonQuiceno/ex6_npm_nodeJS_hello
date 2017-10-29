@@ -4,6 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "hello_nodeJS": "node hello_nodeJS",
+        "hello_nodeJS_REPL": "node hello_nodeJS_REPL",
+        "hello_webApp_nodeJs": "node hello_webApp_nodeJs",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],

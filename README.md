@@ -36,6 +36,13 @@ node
 > .help
 > .exit
 ```
++ to load(and hence execute) a simple nodejs app in node REPL and then exit
+```
+echo "console.log('FIRST line'); console.log('SECOND line');" > hello_nodeJS_REPL2.js
+node
+ .load hello_nodeJS_REPL2.js
+ .exit
+```
 + to create and execute a simplest hello nodeJS app that prints a message to command line
 ```
 echo "console.log('Hello nodeJS from ilker');" > hello_nodeJS.js
@@ -70,6 +77,14 @@ http.createServer((request, response) => {
 
 // Print URL of above server serving simple web app
 console.log("nodeJS' http server started to serve http://127.0.0.1:8013  or http://localhost:8013");
+```
++ to run above created web app, then connect with browser to 
+    - "http://localhost:8012" or 
+    - "http://localhost:8013"
+```
+node hello_webApp_nodeJs
+or using npm script in package.json
+npm run hello_webApp_nodeJs
 ```
 
 ## Dependencies

@@ -1,3 +1,17 @@
+/**
+ * Example of creating 2 web apps that listen on port 8012 and 8013, 
+ * that serves a static 
+ * "Hello web application using nodeJS" and 
+ * "Hello web application using nodeJS with 'fat arrow' lambda instead of function expression"
+ * as text/plain back respectively.
+ * These nodeJS web apps are created using http module, a very basic http server, that comes as part of nodeJS
+ * 
+ * Only dependency is node being installed before.
+ * Can run both at command line via
+ * node hello_webApp_nodeJs
+ * or
+ * node hello_webApp_nodeJs.js
+ */
 // Load HTTP module, which is a simple http web server, that comes as part of nodeJs install
 var http = require("http");
 
