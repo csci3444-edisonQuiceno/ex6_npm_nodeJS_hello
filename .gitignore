@@ -16,6 +16,10 @@ target/
 # Files for Roberta's issues
 roberta*
 
+# nodemon log file #
+####################
+npm-debug.log
+
 # node dependencies to be ignored #
 ###################################
 node_modules/

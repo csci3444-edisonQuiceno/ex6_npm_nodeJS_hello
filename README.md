@@ -49,6 +49,8 @@ echo "console.log('Hello nodeJS from ilker');" > hello_nodeJS.js
 node hello_nodeJS.js
 node hello_nodeJS
 ```
+
+## nodeJS web application using http module from nodeJS
 + to create a simplest web app and serve it in a simple http web server, edit file "hello_webApp_nodeJs.js" with below content
 ```
 // Load HTTP module, which is a simple http web server, that comes as part of nodeJs install
@@ -80,11 +82,31 @@ console.log("nodeJS' http server started to serve http://127.0.0.1:8013  or http
 ```
 + to run above created web app, then connect with browser to 
     - "http://localhost:8012" or 
-    - "http://localhost:8013"
+    - "http://localhost:8013" or
+    - "http://localhost:8014" or "http://localhost:8014/ilker" or "http://localhost:8014/ilker/kiris"
 ```
 node hello_webApp_nodeJs
 or using npm script in package.json
 npm run hello_webApp_nodeJs
+```
++ with main property set to "hello_webApp_nodeJs" in package.json as;
+```
+"main": "hello_webApp_nodeJs.js",
+```
+One can run it even without specifying the JS file name via nodemon as;
+```
+nodemon
+above is equivalent to below with above main property set in package.json
+nodemon hello_webApp_nodeJS.js
+```
++ you can access the 3 apps from command line using command line http client tool "curl" as;
+```
+curl -i "http://localhost:8012"
+curl -i "http://localhost:8013"
+curl -i "http://localhost:8014"
+curl -i "http://localhost:8014/ilker"
+curl -i "http://localhost:8014/ilker/kiris"
+curl -i "http://localhost:8014/doesNotExist"
 ```
 
 ## Dependencies
